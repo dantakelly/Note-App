@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Noto Sans JP", sans-serif; */
+}
+
+/* For lightmode theme*/
+:root{ 
+   --body_background: white;
+   --body_color: black; 
+}
+/*  */
+
+
+/* for darkmode theme */
+[data-theme="dark"] { 
+    --body_background: #282c34; 
+    --body_color: white
+}
+/*  */

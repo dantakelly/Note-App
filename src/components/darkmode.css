@@ -1,0 +1,80 @@
+body{ 
+    /* background-color: #222831; */
+    background: linear-gradient(180deg, #222831, #5a5d7e);
+    min-height: 100vh;
+}
+
+.inputField{ 
+    /* background: linear-gradient(200deg, #222831, #5a5d7e);
+    border-radius: 20px; */
+
+    background-color: transparent;
+    color: #F5EDED;
+}
+
+.inputField::placeholder{ 
+    position: relative;
+    left: 3px; 
+    color: #888787;
+}
+
+.icons-one, .icons-two, .icons-three, .icons-four, 
+.icons-five, .icons-six, .icons-six, .icons-seven{ 
+    color: #F5EDED;
+}
+
+.icons-one:hover, .icons-two:hover, .icons-three:hover, .icons-four:hover, 
+.icons-five:hover, .icons-six:hover, .icons-six:hover, .icons-seven:hover{ 
+    background-color: #222831;
+    border-radius: 100%;
+}
+
+.textBox textarea{ 
+    /* background: linear-gradient(200deg, #222831, #5a5d7e); */
+    /* border-radius: 20px; */
+
+    background-color: transparent;
+    color: #F5EDED;
+}
+
+.textBox textarea::placeholder{ 
+    color: #888787;
+}
+
+
+.main-container-noteapp-section-sticky button{ 
+    background-color: #222831;
+    color: #F5EDED;
+}
+
+.main-container-noteapp-section-sticky button:hover{ 
+    /* background-color: #222831; */
+    color: #222831;
+    border: #5a5d7e;
+}
+
+.create-new-note-icon, .saved-notes-icon{ 
+    color: #F5EDED;
+}
+
+.create-new-note-icon:hover, .saved-notes-icon:hover{ 
+    background-color: #222831;
+    border-radius: 100%;
+}
+
+
+/* Saved Notes - Dark mode section */
+.main-container-noteapp-section-sticky-savedSection button{
+    background-color: #222831;
+    color: #F5EDED;
+}
+
+.main-container-noteapp-section-sticky-savedSection button:hover{
+    color: #222831;
+    border: #5a5d7e;
+}
+
+.my-notes{ 
+    color: #F5EDED;
+}
+/* closed */

@@ -1,0 +1,342 @@
+/* Styling for the note app */
+
+.main-container-noteapp-section-sticky, .main-container-noteapp-section-flow{ 
+    display: flex;
+}
+
+.main-container-noteapp-section-flow{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container-noteapp-section-sticky{ 
+   position: fixed;
+   left: 120px;
+   padding: 35px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   z-index: 1;
+   gap: 8px;
+}
+
+.icons-sticky{ 
+    display: flex;
+   flex-direction: row;
+}
+
+.main-container-noteapp-section-flow{ 
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    right: 270px;
+    padding: 35px;
+}
+
+.Icons-noteapp{ 
+    display: flex;
+}
+
+.main-container-noteapp-section-sticky button{ 
+    width: 140px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: solid rgb(152, 150, 150);
+    color: rgb(108, 105, 105);
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.main-container-noteapp-section-sticky button:hover{ 
+    background-color: rgb(175, 173, 173);
+    color: rgb(255, 249, 249);
+    border: solid black;
+}
+
+
+/* Ensure other elements don't overlap the save button */
+
+
+.create-new-note-icon, .saved-notes-icon{ 
+   padding: 10px;
+}
+
+.main-container-noteapp-section-flow input::placeholder{ 
+    font-size: 40px;
+}
+
+.main-container-noteapp-section-flow input{ 
+    border: none;
+    outline: none;
+
+   padding: 10px;
+   height: 50px;
+   font-size: 40px;
+   font-weight: bolder;
+
+   position: relative;
+   left: 140px;
+}
+
+.Icons-noteapp{ 
+    position: relative;
+    left: 60px;
+    gap: 30px;
+    top: 20px;
+}
+
+.create-new-note-icon, .saved-notes-icon{ 
+  transition: all 0.3s ease;
+  border-radius: 100%;
+  cursor: pointer;
+  color: black
+}
+
+.create-new-note-icon:hover, .saved-notes-icon:hover{ 
+    background-color: #D3D3D3;
+    border-radius: 100%;
+}
+
+.icons-one, .icons-two, .icons-three, .icons-four,
+ .icons-five, .icons-six, .icons-seven{ 
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 8px 8px;
+ }
+
+ .icons-one:hover, .icons-two:hover, .icons-three:hover, .icons-four:hover,
+ .icons-five:hover, .icons-six:hover, .icons-seven:hover{ 
+    background-color: #D3D3D3;
+    border-radius: 100%;
+ }
+
+.textBox textarea{ 
+    width: 800px;
+    position: relative;
+    left: 280px;
+    top: 30px;
+    resize: none;
+    font-size: 17px;
+    outline: none;
+    border: none;
+}
+
+.noteLinkProp{ 
+    color: blue; 
+    cursor: pointer;
+    text-decoration: none;
+
+    width: 800px;
+    position: relative;
+    left: 280px;
+    top: 30px;
+    resize: none;
+    font-size: 17px;
+    outline: none;
+    border: none;
+}
+
+.icons-six, .icons-seven{ 
+    color: #808080;
+}
+
+
+
+/* Media Query for max width -- 300px */
+@media only screen and (max-width: 300px) {
+    .main-container-noteapp-section-sticky{ 
+        position: fixed;
+        bottom: 0;
+        left: 0; 
+        padding: 10px 12px;
+    }
+
+    .main-container-noteapp-section-flow{ 
+       
+    }
+
+    .main-container-noteapp-section-flow input{ 
+        position: fixed;
+        left: 0;
+    }
+
+    .Icons-noteapp{ 
+        position: fixed;
+        left: 0;
+        top: 80px;
+        gap: 5px;
+    }
+
+    .main-container-noteapp-section-flow textarea{
+        position: fixed;
+        left: 0;
+        top: 140px;
+        padding: 0 12px;
+    }
+
+    .popupStyleBox, .linkPopupButton{ 
+       display: none !important;
+    }
+}
+/* media for 300px and under devices closed */
+
+
+/* Media for devices with min width 301px to max 500px */
+@media screen and (min-width: 301px) and (max-width: 500px) {
+    .main-container-noteapp-section-sticky{ 
+        position: fixed;
+        bottom: 0;
+        left: 0; 
+        padding: 10px 12px;
+    }
+
+    .main-container-noteapp-section-flow{ 
+       
+    }
+
+    .main-container-noteapp-section-flow input{ 
+        position: fixed;
+        left: 0;
+    }
+
+    .Icons-noteapp{ 
+        position: fixed;
+        left: 0;
+        top: 80px;
+        gap: 10px;
+    }
+
+    .main-container-noteapp-section-flow textarea{
+        position: fixed;
+        left: 0;
+        top: 140px;
+        padding: 0 12px;
+    }
+
+    .popupStyleBox, .linkPopupButton{ 
+        display: none !important;
+     }
+}
+/* media devices with 301 to 500 closed */
+
+
+/* Media for devices with screen sizes of 501 to 700 */
+@media screen and (min-width: 501px) and (max-width: 700px) { 
+    .main-container-noteapp-section-sticky{ 
+        position: fixed;
+        bottom: 0;
+        left: 0; 
+        padding: 10px 12px;
+    }
+
+    .main-container-noteapp-section-flow{ 
+       
+    }
+
+    .main-container-noteapp-section-flow input{ 
+        position: fixed;
+        left: 0;
+    }
+
+    .Icons-noteapp{ 
+        position: fixed;
+        left: 0;
+        top: 80px;
+        gap: 15px;
+    }
+
+    .main-container-noteapp-section-flow textarea{
+        position: fixed;
+        left: 0;
+        top: 140px;
+        padding: 0 12px;
+    }
+
+    .popupStyleBox, .linkPopupButton{ 
+        display: none !important;
+     }
+}
+/* devices 501 to 700 closed */
+
+/* media for devices that are 701 to 900 */
+@media screen and (min-width: 701px) and (max-width: 900px) { 
+    .main-container-noteapp-section-sticky{ 
+        position: fixed;
+        bottom: 0;
+        left: 0; 
+        padding: 10px 12px;
+    }
+
+    .main-container-noteapp-section-flow{ 
+       
+    }
+
+    .main-container-noteapp-section-flow input{ 
+        position: fixed;
+        left: 0;
+    }
+
+    .Icons-noteapp{ 
+        position: fixed;
+        left: 0;
+        top: 80px;
+        gap: 20px;
+    }
+
+    .main-container-noteapp-section-flow textarea{
+        position: fixed;
+        left: 0;
+        top: 140px;
+        padding: 0 12px;
+    }
+
+    .popupStyleBox, .linkPopupButton{ 
+        display: none !important;
+     }
+}
+/* devices with min 701 to 900 closed */
+
+/* media for devices with 901 to 1080 screen sizes */
+@media screen and (min-width: 901px) and (max-width: 1400px) { 
+    .main-container-noteapp-section-sticky{ 
+        position: fixed;
+        bottom: 0;
+        left: 0; 
+        padding: 10px 12px;
+    }
+
+    .main-container-noteapp-section-flow{ 
+       
+    }
+
+    .main-container-noteapp-section-flow input{ 
+        position: fixed;
+        left: 0;
+    }
+
+    .Icons-noteapp{ 
+        position: fixed;
+        left: 0;
+        top: 80px;
+        gap: 25px;
+    }
+
+    .main-container-noteapp-section-flow textarea{
+        position: fixed;
+        left: 0;
+        top: 140px;
+        padding: 0 12px;
+    }
+
+    .popupStyleBox, .linkPopupButton{ 
+        display: none !important;
+     }
+}
+
+/* 901 to 1080 screen sizes closed  */
